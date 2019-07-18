@@ -5,33 +5,33 @@
   "private": "true",
   "version": "0.0.1",
   "repository": {
-      "type" : "git",
-      "url" : "https://github.com/fireball-x/gulp-fontello-import.git"
+    "type": "git",
+    "url": "https://github.com/fireball-x/gulp-fontello-import.git"
   },
-  "keywords" : [
-      "gulp",
-      "fontello",
-      "icon-font",
-      "pipeline"
+  "keywords": [
+    "gulp",
+    "fontello",
+    "icon-font",
+    "pipeline"
   ],
-  "author" : "nantas",
+  "author": "nantas",
   "license": "MIT",
-  "engines" : {
+  "engines": {
     "node": ">= 0.10.33"
   },
   "bugs": {
-      "url": "https://github.com/fireball-x/gulp-fontello-import/issues"
+    "url": "https://github.com/fireball-x/gulp-fontello-import/issues"
   },
   "homepage": "https://github.com/fireball-x/gulp-fontello-import",
   "dependencies": {
     "lodash": ">=4.17.11",
-    "svgpath": "~ 1.0.0",
-    "xmldom": "~ 0.1.16",
+    "map-stream": "0.0.5",
     "needle": "0.5.8",
-    "unzip": "0.1.8",
-    "map-stream": "0.0.5"
+    "svgpath": "~ 1.0.0",
+    "unzipper": "^0.10.1",
+    "xmldom": "~ 0.1.16"
   },
   "devDependencies": {
-    "gulp": "^3.8.10"
+    "gulp": "^4.0.2"
   }
 }

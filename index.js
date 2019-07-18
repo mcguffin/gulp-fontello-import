@@ -3,7 +3,7 @@ var fs = require('fs');
 var path = require('path');
 var _ = require('lodash');
 var needle = require('needle');
-var unzip = require('unzip');
+var unzip = require('unzipper');
 var SvgPath = require('svgpath');
 
 var map = require('map-stream');
@@ -14,7 +14,7 @@ var fontelloIcons = [];
 
 var maxCode = _.max(customIcons, function(glyph) {
   return glyph.code;
-}).code;
+});
 
 var allocatedRefCode = (!maxCode) ? 59392 : maxCode + 1;
 
@@ -57,7 +57,7 @@ function getIconFont(options, cb) {
       }
     });
     if (options.css && options.font) {
-      return zipFile.pipe(unzip.Parse()).on('entry', (function(entry) {
+      return zipFile.pipe( unzip.Parse() ).on('entry', (function(entry) {
         var cssPath, dirName, fileName, fontPath, pathName, type, _ref;
         pathName = entry.path, type = entry.type;
         if (type === 'File') {
